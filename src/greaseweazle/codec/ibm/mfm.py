@@ -468,6 +468,15 @@ class Commodore_1581(IBM_MFM_720):
     gap_3 = 30
     nsec  = 10
     hswap = True
+    
+   
+class CoCo_Tandy_JVC(IBM_MFM_Predefined):
+
+    
+    gap_1 = None
+    nsec  = 18
+    id0   = 0
+    sz    = 3
 
 class Sega_SF7000(IBM_MFM_Predefined):
 
