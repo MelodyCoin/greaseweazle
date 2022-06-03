@@ -1,4 +1,4 @@
-# Greaseweazle Host Tools
+# Greaseweazle Host Tools + CoCo/JVC Disk Format Support
 
 *Tools for accessing a floppy drive at the raw flux level.*
 
