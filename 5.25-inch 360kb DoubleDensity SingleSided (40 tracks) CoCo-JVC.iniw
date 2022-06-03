@@ -1,0 +1,16 @@
+[FluxMyFluffyFloppy-Write-Template]
+Version=3.00
+Name=5.25-inch 360kb DoubleDensity SingleSided (40 tracks) CoCo-JVC
+Description=CoCo-1-2-3" "Tandy" "JVC" 5.25-inch 360kb "DoubleDensity" "SingleSided" "single step" " 40 tracks" "48 tpi
+[Settings]
+FormatSpec=
+EraseEmpty=1
+Fake-Index=
+NoVerify=0
+Retries=2
+Precomp=
+Cylinders=0-39
+Heads=0
+Steps=1
+HSwap=0
+Flippy=
