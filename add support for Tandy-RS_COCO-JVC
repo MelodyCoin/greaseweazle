@@ -1,0 +1,17 @@
+Add configs files for Tandy/Radioshack Color Computer 1-2-3 Disk Flux support. 
+
+5.25-inch 360k DoubleDensity SingleSided (40 tracks) COCO_1-2-3
+
+JVC FORMAT:
+
+ISO-MFM 
+
+
+Number of tracks =  40
+     Cylinders =  0-39
+           Heads =  0
+                  Steps =  1
+Sector per tracks =  18
+
+
+
