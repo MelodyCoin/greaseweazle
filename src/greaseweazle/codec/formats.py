@@ -1,7 +1,7 @@
 # greaseweazle/codec/formats.py
 #
 # Written & released by Keir Fraser <keir.xen@gmail.com>
-#
+# Edited by MelodyCoin To add support for CoCo_Tandy_JVC Format!
 # This is free and unencumbered software released into the public domain.
 # See the file COPYING for more details, or visit <http://unlicense.org>.
 
@@ -110,6 +110,16 @@ class Format_Commodore_1581(Format):
 class Format_IBM_180(Format):
     img_compatible = True
     default_trackset = 'c=0-39:h=0'
+    max_trackset = 'c=0-41:h=0'
+    def __init__(self):
+        import greaseweazle.codec.ibm.mfm as m
+        self.fmt = m.IBM_MFM_720
+        self.default_revs = m.default_revs
+        super().__init__()
+        
+class Format_CoCo_Tandy_JVC(Format):
+    img_compatible = True
+    default_trackset = 'c=0-39:h=0:step=1'
     max_trackset = 'c=0-41:h=0'
     def __init__(self):
         import greaseweazle.codec.ibm.mfm as m
@@ -252,6 +262,7 @@ formats = OrderedDict({
     'atarist.800': Format_AtariST_800,
     'atarist.880': Format_AtariST_880,
     'commodore.1581': Format_Commodore_1581,
+    'CoCo.Tandy.JVC': Format_CoCo_Tandy_JVC,
     'ibm.180': Format_IBM_180,
     'ibm.360': Format_IBM_360,
     'ibm.720': Format_IBM_720,
