@@ -473,10 +473,11 @@ class Commodore_1581(IBM_MFM_720):
 class CoCo_Tandy_JVC(IBM_MFM_Predefined):
 
     
-    gap_1 = None
+    time_per_rev = 0.2
+
     nsec  = 18
     id0   = 0
-    sz    = 3
+
 
 class Sega_SF7000(IBM_MFM_Predefined):
 
